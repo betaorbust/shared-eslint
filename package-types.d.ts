@@ -1,4 +1,4 @@
-const EslintConfig: object;
+type EsLintConfig = object;
 export function makeConfig({
 	withJest,
 	withTypescript,
@@ -7,7 +7,7 @@ export function makeConfig({
 	withJest: boolean;
 	withTypescript: boolean;
 	isRoot?: boolean;
-}): EslintConfig;
+}): EsLintConfig;
 export const updateConfigForTypes: (
 	config: EsLintConfig,
 	overrideNames: string[],
