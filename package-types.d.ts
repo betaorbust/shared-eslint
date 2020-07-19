@@ -1,26 +1,16 @@
-type EsLintConfig = object;
-export function makeConfig({
-	withJest,
-	withTypescript,
-	isRoot,
-}: {
-	withJest: boolean;
-	withTypescript: boolean;
-	isRoot?: boolean;
-}): EsLintConfig;
-export const updateConfigForTypes: (
-	config: EsLintConfig,
-	overrideNames: string[],
-	overrideUpdate: object
-) => EsLintConfig;
 declare function getDevelopmentDeps({
+	withJavascript,
 	withReact,
-	withJest,
 	withTypescript,
+	withReactTypescript,
+	withJest,
+	withJestTypescript,
 }: {
+	withJavascript: boolean;
 	withReact: boolean;
-	withJest: boolean;
 	withTypescript: boolean;
+	withReactTypescript: boolean;
+	withJest: boolean;
+	withJestTypescript: boolean;
 }): string[];
-export declare const supportedTypes: { [supportedType: string]: string };
 export { getDevelopmentDeps as getDevDeps };

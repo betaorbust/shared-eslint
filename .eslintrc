@@ -1,0 +1,8 @@
+{
+	"overrides": [
+		{
+			"files": ["*.js"],
+			"extends": ["./javascript"]
+		}
+	]
+}

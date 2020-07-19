@@ -2,26 +2,58 @@
 	"name": "@betaorbust/eslint-config",
 	"version": "0.0.0",
 	"description": "My shared eslint config.",
-	"main": "src/index.js",
-	"types": "package-types.d.ts",
+	"types": "./package-types.d.ts",
+	"main": "./index.js",
 	"scripts": {
-		"lint": "eslint ./ --ext .ts,.js,.tsx,.jsx"
+		"lint": "eslint ./"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@betaorbust/eslint-config": "./",
 		"@betaorbust/shared-configs": "0.0.0",
-		"eslint": "^6.8.0",
-		"eslint-config-airbnb-base": "^14.1.0",
+		"@commitlint/cli": "^9.0.1",
+		"@commitlint/config-conventional": "^9.0.1",
+		"eslint": "^7.5.0",
+		"eslint-config-airbnb-base": "^14.2.0",
 		"eslint-config-prettier": "^6.11.0",
-		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-eslint-comments": "^3.2.0",
+		"eslint-plugin-import": "^2.22.0",
 		"eslint-plugin-promise": "^4.2.1",
-		"eslint-plugin-unicorn": "^18.0.1",
-		"prettier": "^2.0.5"
+		"eslint-plugin-unicorn": "^21.0.0",
+		"husky": "^4.2.5",
+		"lint-staged": "^10.2.11",
+		"prettier": "^2.0.5",
+		"typescript": "^3.9.6"
 	},
-	"dependencies": {
-		"deepmerge": "^4.2.2",
-		"eslint-plugin-eslint-comments": "^3.1.2"
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"lint-staged": {
+		"*.{ts,js,tsx,jsx}": "eslint --fix",
+		"*.{js,jsx,json,ts,tsx,css,md}": "prettier --write"
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		],
+		"rules": {
+			"subject-case": [
+				2,
+				"always",
+				[
+					"sentence-case"
+				]
+			],
+			"subject-full-stop": [
+				2,
+				"always",
+				"."
+			]
+		}
 	}
 }
