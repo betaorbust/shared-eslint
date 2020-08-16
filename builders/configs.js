@@ -147,7 +147,7 @@ const typescript = {
 
 const react = {
 	config: {
-		...cheapClone(javascript),
+		...cheapClone(javascript.config),
 		extends: orderExtensions(ORDERED_EXTENSIONS, [
 			...javascript.config.extends,
 			'airbnb',
@@ -164,7 +164,7 @@ const react = {
 
 const reactTypescript = {
 	config: {
-		...cheapClone(typescript),
+		...cheapClone(typescript.config),
 		extends: orderExtensions(ORDERED_EXTENSIONS, [
 			...typescript.config.extends,
 			'airbnb-typescript',
@@ -181,7 +181,7 @@ const reactTypescript = {
 
 const jest = {
 	config: {
-		...cheapClone(javascript),
+		...cheapClone(javascript.config),
 		extends: orderExtensions(ORDERED_EXTENSIONS, [
 			...javascript.config.extends,
 			'plugin:jest/recommended',
@@ -193,7 +193,7 @@ const jest = {
 
 const jestTypescript = {
 	config: {
-		...cheapClone(typescript),
+		...cheapClone(typescript.config),
 		extends: orderExtensions(ORDERED_EXTENSIONS, [
 			...typescript.config.extends,
 			'plugin:jest/recommended',
