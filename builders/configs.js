@@ -139,7 +139,7 @@ const typescript = {
 		'eslint-plugin-unicorn',
 		'eslint-plugin-promise',
 		'eslint-plugin-eslint-comments',
-		'eslint-config-airbnb-typescript',
+		'betaorbust/eslint-config-airbnb-typescript',
 		'eslint-plugin-import',
 		'eslint-config-prettier',
 	],

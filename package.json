@@ -2,6 +2,7 @@
 	"name": "@betaorbust/eslint-config",
 	"version": "0.0.1",
 	"description": "My shared eslint config.",
+	"repository": "betaorbust/shared-eslint",
 	"types": "./package-types.d.ts",
 	"main": "./index.js",
 	"scripts": {
@@ -10,9 +11,9 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
+	"dependencies": {},
 	"devDependencies": {
 		"@betaorbust/eslint-config": "./",
-		"@betaorbust/shared-configs": "0.0.0",
 		"@commitlint/cli": "^9.0.1",
 		"@commitlint/config-conventional": "^9.0.1",
 		"eslint": "^7.5.0",
