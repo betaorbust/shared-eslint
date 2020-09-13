@@ -3,14 +3,12 @@
 	"version": "0.0.1",
 	"description": "My shared eslint config.",
 	"repository": "betaorbust/shared-eslint",
-	"types": "./package-types.d.ts",
-	"main": "./index.js",
 	"scripts": {
 		"lint": "eslint ./"
 	},
 	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"author": "Jacques Favreau",
+	"license": "unlicensed",
 	"dependencies": {},
 	"devDependencies": {
 		"@betaorbust/eslint-config": "./",

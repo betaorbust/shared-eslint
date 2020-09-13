@@ -1,8 +1,24 @@
 {
-	"overrides": [
-		{
-			"files": ["*.js"],
-			"extends": ["./javascript"]
-		}
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2020, // Allows for the parsing of modern ECMAScript features
+		"sourceType": "module" // Allows for the use of imports
+	},
+	"plugins": ["unicorn", "promise", "eslint-comments"],
+	"extends": [
+		"eslint:recommended",
+		"./eslint",
+		"plugin:unicorn/recommended",
+		"./unicorn",
+		"plugin:promise/recommended",
+		"./promise",
+		"plugin:eslint-comments/recommended",
+		"./comments",
+		"airbnb-base",
+		"./airbnb-base",
+		"prettier"
 	]
 }

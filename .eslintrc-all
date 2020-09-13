@@ -1,0 +1,61 @@
+{
+	"env": { "browser": true, "node": true },
+	"parserOptions": { "ecmaVersion": 2020, "sourceType": "module" },
+	"plugins": ["unicorn", "promise", "eslint-comments"],
+	"extends": [
+		"eslint:recommended",
+		"@betaorbust/eslint-config/eslint",
+		"plugin:unicorn/recommended",
+		"@betaorbust/eslint-config/unicorn",
+		"plugin:promise/recommended",
+		"@betaorbust/eslint-config/promise",
+		"plugin:eslint-comments/recommended",
+		"@betaorbust/eslint-config/comments",
+		"airbnb-base",
+		"@betaorbust/eslint-config/airbnb-base",
+		"prettier"
+	],
+	"overrides": [
+		{
+			"files": ["*.jsx"],
+			"plugins": ["import"],
+			"extends": [
+				"airbnb",
+				"@betaorbust/eslint-config/airbnb",
+				"plugin:import/react",
+				"prettier"
+			]
+		},
+		{
+			"files": ["*.ts", "*.tsx"],
+			"parserOptions": { "project": "./tsconfig.json" },
+			"parser": "@typescript-eslint/parser",
+			"plugins": ["import", "@typescript-eslint/eslint-plugin"],
+			"extends": [
+				"plugin:@typescript-eslint/recommended",
+				"@betaorbust/eslint-config/typescript-eslint",
+				"plugin:import/typescript",
+				"airbnb-typescript/base",
+				"@betaorbust/eslint-config/airbnb-typescript-base",
+				"prettier"
+			]
+		},
+		{
+			"files": ["*.tsx"],
+			"extends": [
+				"airbnb-typescript",
+				"@betaorbust/eslint-config/airbnb-typescript",
+				"prettier"
+			]
+		},
+		{
+			"files": ["*.jest.js", "*.jest.jsx", "*.jest.ts", "*.jest.tsx"],
+			"plugins": ["jest"],
+			"extends": [
+				"plugin:jest/recommended",
+				"plugin:jest/style",
+				"@betaorbust/eslint-config/jest"
+			]
+		}
+	]
+}
