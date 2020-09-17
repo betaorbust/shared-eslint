@@ -10,6 +10,8 @@ module.exports = {
 			'ignorePackages',
 			{ js: 'never', jsx: 'never', ts: 'never', tsx: 'never' },
 		],
+		// Yeah, don't do that
+		'no-console': 'error',
 		// Modifying the AirBnB style guide
 		'no-restricted-syntax': [
 			'error',
