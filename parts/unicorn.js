@@ -9,5 +9,9 @@ module.exports = {
 		// Typescript does not allow spreading of Set etc. without
 		// downlevelIteration set to true.
 		'unicorn/prefer-spread': 'off',
+		// Prettier is just flat wrong here. Made the incorrect decision
+		// and won't go back. So we have to skip this.
+		// https://github.com/prettier/prettier/issues/5158
+		'unicorn/number-literal-case': 'off',
 	},
 };

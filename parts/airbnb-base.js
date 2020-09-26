@@ -12,6 +12,8 @@ module.exports = {
 		],
 		// Yeah, don't do that
 		'no-console': 'error',
+		// Allow whole file
+		'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
 		// Modifying the AirBnB style guide
 		'no-restricted-syntax': [
 			'error',
