@@ -17,7 +17,7 @@ few base technologies are present. Namely:
 
 ```js
 module.exports = {
-	extends: ['@betaorbust/eslint-config/profile/node'],
+	extends: ['@betaorbust/eslint-config/profiles/node'],
 	parserOptions: { tsconfigRootDir: __dirname },
 };
 ```
