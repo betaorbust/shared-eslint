@@ -1,4 +1,14 @@
-module.exports = () => {
+const APP_TYPES = {
+	web: Symbol('web'),
+	node: Symbol('node'),
+};
+
+const common = (type) => {
+	if (!Object.values(APP_TYPES).includes(type)) {
+		throw new Error(
+			`Unknown app type '${type.toString()}'. Use only exported symbols from _common.js`
+		);
+	}
 	return {
 		env: {
 			browser: true,
@@ -82,4 +92,9 @@ module.exports = () => {
 			},
 		],
 	};
+};
+
+module.exports = {
+	APP_TYPES,
+	common,
 };

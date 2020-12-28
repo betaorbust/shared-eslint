@@ -1,2 +1,4 @@
 require('@rushstack/eslint-patch/modern-module-resolution');
-module.exports = require('./_common')('node');
+const { common, APP_TYPES } = require('./_common');
+
+module.exports = common(APP_TYPES.node);
