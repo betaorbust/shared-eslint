@@ -9,5 +9,7 @@ module.exports = {
 		// I just keep fighting this one over and over. If we disable the no-null
 		// rule then we should turn this on.
 		'react/require-default-props': 'off',
+		// Prettier handles this
+		'@typescript-eslint/comma-dangle': ['off', {}],
 	},
 };
