@@ -13,5 +13,10 @@ module.exports = {
 		// and won't go back. So we have to skip this.
 		// https://github.com/prettier/prettier/issues/5158
 		'unicorn/number-literal-case': 'off',
+		// I just don't have it in me to make this change at the moment
+		'unicorn/prefer-module': 'off',
+		// I get where this is coming from, but I very frequnetly use
+		// arr.filter().map().forEach() and this is too strict for that.
+		'unicorn/no-array-for-each': 'off',
 	},
 };

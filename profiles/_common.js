@@ -52,13 +52,7 @@ const common = (type) => {
 			{
 				files: ['*.jsx'],
 				plugins: ['import'],
-				extends: [
-					'airbnb',
-					'airbnb/hooks',
-					'../parts/airbnb',
-					'prettier',
-					'prettier/react',
-				],
+				extends: ['airbnb', 'airbnb/hooks', '../parts/airbnb', 'prettier'],
 			},
 			{
 				files: ['*.tsx'],
@@ -67,7 +61,6 @@ const common = (type) => {
 					'airbnb/hooks',
 					'../parts/airbnb-typescript',
 					'prettier',
-					'prettier/react',
 				],
 			},
 			{
