@@ -18,5 +18,9 @@ module.exports = {
 		// I get where this is coming from, but I very frequnetly use
 		// arr.filter().map().forEach() and this is too strict for that.
 		'unicorn/no-array-for-each': 'off',
+		// I LOOOOOVE this idea, but not all my projects are up to 16x yet
+		// and until "node:<builtin>" is backported to 14.x, I'm going
+		// to turn it off.
+		'unicorn/prefer-node-protocol': 'off',
 	},
 };
