@@ -14,6 +14,14 @@ module.exports = {
 		'no-console': 'error',
 		// Allow whole file
 		'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
+
+		// Require return statement for object literals
+		'arrow-body-style': [
+			'error',
+			'as-needed',
+			{ requireReturnForObjectLiteral: true },
+		],
+
 		// Modifying the AirBnB style guide
 		'no-restricted-syntax': [
 			'error',
