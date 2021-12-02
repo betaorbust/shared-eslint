@@ -57,6 +57,7 @@ const common = (type) => {
 			{
 				files: ['*.tsx'],
 				extends: [
+					'airbnb',
 					'airbnb-typescript',
 					'airbnb/hooks',
 					'../parts/airbnb-typescript',

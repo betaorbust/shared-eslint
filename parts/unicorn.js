@@ -22,5 +22,9 @@ module.exports = {
 		// and until "node:<builtin>" is backported to 14.x, I'm going
 		// to turn it off.
 		'unicorn/prefer-node-protocol': 'off',
+		// prettier handles this
+		'unicorn/template-indent': 'off',
+		// this is great, but null is used colloquially in too many places
+		'unicorn/no-null': 'off',
 	},
 };
