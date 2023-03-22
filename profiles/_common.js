@@ -15,7 +15,7 @@ const common = (type) => {
 			node: true,
 		},
 		parserOptions: {
-			ecmaVersion: 2020,
+			ecmaVersion: 'latest',
 			sourceType: 'module',
 		},
 		plugins: ['unicorn', 'promise', 'eslint-comments', 'import'],
