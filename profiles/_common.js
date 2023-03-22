@@ -66,16 +66,18 @@ const common = (type) => {
 			},
 			{
 				files: [
-					// The right way
 					'*.jest.js',
 					'*.jest.jsx',
 					'*.jest.ts',
 					'*.jest.tsx',
-					// The general way
 					'*.test.js',
 					'*.test.jsx',
 					'*.test.ts',
 					'*.test.tsx',
+					'*.spec.js',
+					'*.spec.jsx',
+					'*.spec.ts',
+					'*.spec.tsx',
 				],
 				plugins: ['jest'],
 				extends: [
