@@ -4,6 +4,6 @@ module.exports = {
 	rules: {
 		...baseRules,
 		'import/no-default-export': 'off',
-		'import/prefer-default-export': 'error',
+		'import/prefer-default-export': 'off',
 	},
 };
