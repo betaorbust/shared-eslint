@@ -1,6 +1,6 @@
 {
 	"name": "@betaorbust/eslint-config",
-	"version": "4.0.1",
+	"version": "5.0.0",
 	"description": "My shared eslint config.",
 	"repository": "betaorbust/shared-eslint",
 	"main": "./index.js",
